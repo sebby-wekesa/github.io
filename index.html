@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Sebby_wekesa</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Sebby Wekesa - Python Developer & Data Scientist</title>
+  <meta content="Sebby Wekesa - Python Developer and Data Scientist from Nairobi, Kenya. Specializing in software development, data science, and machine learning." name="description">
+  <meta content="Python developer, data scientist, machine learning, web development, Nairobi Kenya, software developer" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -26,6 +26,83 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  
+  <style>
+    /* Custom enhancements */
+    .skill-progress {
+      height: 20px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+    
+    .skill-name {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+    
+    .portfolio-item {
+      transition: transform 0.3s ease;
+      margin-bottom: 30px;
+    }
+    
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .social-links a {
+      transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      transform: scale(1.2);
+    }
+    
+    .service-box {
+      height: 100%;
+      transition: all 0.3s ease;
+      padding: 25px 20px;
+      border-radius: 8px;
+    }
+    
+    .service-box:hover {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+    }
+    
+    .navbar ul li a.active {
+      color: #3498db !important;
+      font-weight: bold;
+    }
+    
+    /* Animation for section entries */
+    .fade-in {
+      animation: fadeIn 1s;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Improved button styles */
+    .btn-custom {
+      background: #3498db;
+      color: white;
+      border-radius: 30px;
+      padding: 12px 30px;
+      font-weight: 600;
+      transition: all 0.3s;
+      border: 2px solid #3498db;
+    }
+    
+    .btn-custom:hover {
+      background: transparent;
+      color: #3498db;
+      transform: translateY(-3px);
+    }
+  </style>
 </head>
 
 <body>
@@ -34,8 +111,8 @@
   <header id="header">
     <div class="container">
 
-      <h1><a href="index.html">Sebby wekesa</a></h1>
-      <h2>I'm a passionate <span>Python developer</span> from Nairobi, Kenya</h2>
+      <h1><a href="index.html">Sebby Wekesa</a></h1>
+      <h2>I'm a passionate <span class="typed" data-typed-items="Python Developer, Data Scientist, Software Engineer, Problem Solver"></span> from Nairobi, Kenya</h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -50,10 +127,10 @@
       </nav><!-- .navbar -->
 
       <div class="social-links">
-        <a href="https://twitter.com/Sebby_wekesa" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://github.com/sebby-wekesa" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://www.instagram.com/iam_s.e.b.b.y/#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/sebby-wekesa-1532781a0" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://twitter.com/Sebby_wekesa" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://github.com/sebby-wekesa" target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/iam_s.e.b.b.y/#" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/sebby-wekesa-1532781a0" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
 
     </div>
@@ -72,10 +149,10 @@
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/me.jpg" class="img-fluid" alt="">
+          <img src="assets/img/me.jpg" class="img-fluid" alt="Sebby Wekesa - Python Developer">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Software Developer and Data Science</h3>
+          <h3>Software Developer & Data Scientist</h3>
           <p class="fst-italic">
             I am a strong advocate for open-source software and have actively contributed to projects on platforms like GitHub. Collaborating with the global developer community has been an enriching experience that has expanded my skills and perspective.
           </p>
@@ -91,7 +168,7 @@
             <div class="col-lg-6">
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>26</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>bachelor</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sebbywakis@gmail.com</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
               </ul>
@@ -99,6 +176,9 @@
           </div>
           <p>
             I am a motivated, adaptable and responsible computing student seeking a position in an IT position which will utilize the professional and technical skills developed through past year of study in this field. And be able to change my society and the world as whole through my skills and profession.
+          </p>
+          <a href="#contact" class="btn btn-custom mt-3">Hire Me</a>
+          <a href="#resume" class="btn btn-outline-primary mt-3 ms-2">View Resume</a>
         </div>
       </div>
 
@@ -115,51 +195,56 @@
       <div class="row skills-content">
 
         <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+          <div class="skill-name">
+            <span>HTML</span>
+            <span>100%</span>
+          </div>
+          <div class="progress skill-progress">
+            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
 
-          <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+          <div class="skill-name">
+            <span>CSS</span>
+            <span>90%</span>
+          </div>
+          <div class="progress skill-progress">
+            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
 
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+          <div class="skill-name">
+            <span>JavaScript</span>
+            <span>75%</span>
+          </div>
+          <div class="progress skill-progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
 
         </div>
 
         <div class="col-lg-6">
 
-          <div class="progress">
-            <span class="skill">PHP <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+          <div class="skill-name">
+            <span>PHP</span>
+            <span>80%</span>
+          </div>
+          <div class="progress skill-progress">
+            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
 
-          <div class="progress">
-            <span class="skill">python <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+          <div class="skill-name">
+            <span>Python</span>
+            <span>90%</span>
+          </div>
+          <div class="progress skill-progress">
+            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
 
-          <div class="progress">
-            <span class="skill">java<i class="val">55%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+          <div class="skill-name">
+            <span>Java</span>
+            <span>55%</span>
+          </div>
+          <div class="progress skill-progress">
+            <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
 
         </div>
@@ -176,7 +261,7 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-3 col-md-4">
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
             <i class="ri-code-box-line" style="color: #4233ff;"></i>
             <h3>Python</h3>
@@ -185,7 +270,7 @@
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
             <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>Data science</h3>
+            <h3>Data Science</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
@@ -197,7 +282,7 @@
         <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
           <div class="icon-box">
             <i class="ri-php-line" style="color: #4F5D95;"></i>
-            <h3>php</h3>
+            <h3>PHP</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
@@ -215,7 +300,7 @@
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
             <i class="ri-code-box-line" style="color: #4233ff;"></i>
-            <h3>java</h3>
+            <h3>Java</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
@@ -227,20 +312,11 @@
       </div>
 
     </div><!-- End Interests -->
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="owl-carousel testimonials-carousel">
-
-      </div>
-
-    </div><!-- End Testimonials  -->
 
   </section><!-- End About Section -->
 
   <!-- ======= Resume Section ======= -->
- <section id="resume" class="resume">
+  <section id="resume" class="resume">
     <div class="container">
 
       <div class="section-title">
@@ -252,14 +328,12 @@
         <div class="col-lg-6">
           <h3 class="resume-title">Summary</h3>
           <div class="resume-item pb-0">
-            <h4>Sebby wekesa</h4>
-            <p><em>Motivated and adaptable Computer Science graduate with hands-on IT experience in support, networking, and
-software development. Strong problem-solving skills with a focus on delivering efficient technical solutions.
-Adept at troubleshooting, system maintenance, and collaborating in team environments.</em></p>
+            <h4>Sebby Wekesa</h4>
+            <p><em>Motivated and adaptable Computer Science graduate with hands-on IT experience in support, networking, and software development. Strong problem-solving skills with a focus on delivering efficient technical solutions. Adept at troubleshooting, system maintenance, and collaborating in team environments.</em></p>
             <p>
             <ul>
               <li>Nairobi, Kenya</li>
-              <li>(+254)797 294 574</li>
+              <li>(+254) 797 294 574</li>
               <li>sebbywakis@gmail.com</li>
             </ul>
             </p>
@@ -267,67 +341,68 @@ Adept at troubleshooting, system maintenance, and collaborating in team environm
 
           <h3 class="resume-title">Education</h3>
           <div class="resume-item">
-            <h4>Bachelor of science, computer science (Gretsa University Thika)</h4>
+            <h4>Bachelor of Science, Computer Science</h4>
             <h5>2018 - 2023</h5>
-            <p><em>Gretsa University BSc. Computer science, Thika</em></p>
+            <p><em>Gretsa University, Thika</em></p>
             <p>Relevant coursework:
             <ul>
-            	<li>Software Development: Data structures and Algorithms, Object-Oriented Programming.</li>
-            	<li>System/Security: Computer Networks, Database Management, Cybersecurity Fundamentals.</li>
-            	<li>Applied Technologies: Web Development(HTML/CSS/Javascript), Machine Learning</li>
+              <li>Software Development: Data structures and Algorithms, Object-Oriented Programming.</li>
+              <li>System/Security: Computer Networks, Database Management, Cybersecurity Fundamentals.</li>
+              <li>Applied Technologies: Web Development (HTML/CSS/JavaScript), Machine Learning</li>
             </ul>
-
-</p>
+            </p>
           </div>
+          
+          <h3 class="resume-title">Professional Experience</h3>
           <div class="resume-item">
-            <h3 class="resume-title">Professional Experience</h3>         
-            <h4>IT Support Technician </h4>
-            <h5>February 2024- April 2024</h5>
-            <p><em>Riannah wholesalers, Eastleigh,Nairobi County</em></p>
+            <h4>IT Support Technician</h4>
+            <h5>February 2024 - April 2024</h5>
+            <p><em>Riannah Wholesalers, Eastleigh, Nairobi County</em></p>
             <p>
+            <ul>
               <li>Spearheaded the installation and updates of a proprietary shop management system, reducing manual errors by 30%.</li>
-              <li> Repaired network cables, configured secure Wi-Fi, and resolved connectivity problems.</li>
+              <li>Repaired network cables, configured secure Wi-Fi, and resolved connectivity problems.</li>
               <li>Managed customer feedback and prioritized system improvements.</li>
-              <li> network performance, resolving bandwidth</li>
+              <li>Optimized network performance, resolving bandwidth issues.</li>
+            </ul>
             </p>
           </div>
         </div>
+        
         <div class="col-lg-6">
           <div class="resume-item">
             <h4>ICT Attaché/Consultant</h4>
-            <h5> Jan 2023 - April 2023</h5>
-            <p><em>Civil Registrations Services, Trans nzoia county, Kitale </em></p>
+            <h5>Jan 2023 - April 2023</h5>
+            <p><em>Civil Registrations Services, Trans Nzoia County, Kitale</em></p>
             <p>
             <ul>
               <li>Database & System Administration:
                 <ul>
-                    <li>Managed SQL-based databases for birth/death certificate records, ensuring 99% data accuracy.</li>
-                    <li>Automated software updates across 15+ departmental computers using PowerShell scripts.</li> 
+                  <li>Managed SQL-based databases for birth/death certificate records, ensuring 99% data accuracy.</li>
+                  <li>Automated software updates across 15+ departmental computers using PowerShell scripts.</li> 
                 </ul>
-                </li>
-              <li>Network Troubleshooting:
-                  <ul>
-                    <li>Configured Cisco switches/routers and resolved IP conflicts, improving LAN stability.</li>
-                    <li>Migrated a wired office network to wireless infrastructure, enhancing mobility for staff.</li>
-                  </ul> 
               </li>
-              <li>
-                Process Improvement:
-                  <ul>
-                    <li>
-                      Trained 10+ staff on digital registration tools, cutting processing time by 25%
-                    </li>
-                  </ul>
+              <li>Network Troubleshooting:
+                <ul>
+                  <li>Configured Cisco switches/routers and resolved IP conflicts, improving LAN stability.</li>
+                  <li>Migrated a wired office network to wireless infrastructure, enhancing mobility for staff.</li>
+                </ul> 
+              </li>
+              <li>Process Improvement:
+                <ul>
+                  <li>Trained 10+ staff on digital registration tools, cutting processing time by 25%</li>
+                </ul>
               </li>
             </ul>
             </p>
           </div>
+          
           <div class="resume-item">
-            <h4>Certification</h4>
+            <h4>Certifications</h4>
             <h5>Technical Skills and Certification</h5>
             <p>
             <ul>
-              <li>Programming and web development: Python, JavaScript, Java, SQL, HTML/CSS, Flask, REST APIs</li>
+              <li>Programming and Web Development: Python, JavaScript, Java, SQL, HTML/CSS, Flask, REST APIs</li>
               <li>Networking: Cisco CLI, TCP/IP, Wireless Configurations.</li>
               <li>Tools: Git, Linux CLI, Microsoft Office, Wireshark.</li>
               <li>Certifications:
@@ -337,19 +412,25 @@ Adept at troubleshooting, system maintenance, and collaborating in team environm
                 </ul>
               </li>
             </ul>
+            </p>
+          </div>
+          
           <div class="resume-item">
             <h4>Reference</h4>
-            <h5>Joseph ndongoli</h5>
+            <h5>Joseph Ndongoli</h5>
             <p>
             <ul>
               <li>County Civil Registrar</li>
-              <li>Kitale</li>
-              <li>Phone No: 0729058666</li>
-              <li>Trans-nzoia county</li>
+              <li>Kitale, Trans-Nzoia County</li>
+              <li>Phone: 0729 058 666</li>
             </ul>
             </p>
           </div>
         </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-custom">Download Resume</a>
       </div>
 
     </div>
@@ -366,50 +447,50 @@ Adept at troubleshooting, system maintenance, and collaborating in team environm
 
       <div class="row">
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
+          <div class="icon-box service-box">
             <div class="icon"><i class="bx bx-code"></i></div>
-            <h4><a href="">software development</a></h4>
-            <p>we provide service like software and web development</p>
+            <h4><a href="#">Software Development</a></h4>
+            <p>Custom software and web development solutions tailored to your business needs.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
+          <div class="icon-box service-box">
             <div class="icon"><i class="bx bxl-git"></i></div>
-            <h4><a href="">git collaboration</a></h4>
-            <p>Software version control using git and github services</p>
+            <h4><a href="#">Git Collaboration</a></h4>
+            <p>Software version control using Git and GitHub services for efficient team collaboration.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
+          <div class="icon-box service-box">
             <div class="icon"><i class="bx bxl-python"></i></div>
-            <h4><a href="">python services</a></h4>
-            <p>I deal with core python, machine learning and data science with python programming language </p>
+            <h4><a href="#">Python Development</a></h4>
+            <p>Core Python programming, machine learning, and data science solutions using Python.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
+          <div class="icon-box service-box">
             <div class="icon"><i class="bx bxl-java"></i></div>
-            <h4><a href="">Java programming language</a></h4>
-            <p>I deal with overall java software development services</p>
+            <h4><a href="#">Java Development</a></h4>
+            <p>Comprehensive Java software development services for desktop and web applications.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
+          <div class="icon-box service-box">
             <div class="icon"><i class="bx bx-network-chart"></i></div>
-            <h4><a href="">Networking</a></h4>
-            <p>troubleshooting and administration of network and network hubs</p>
+            <h4><a href="#">Networking</a></h4>
+            <p>Network troubleshooting, administration, and configuration of network infrastructure.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
+          <div class="icon-box service-box">
             <div class="icon"><i class="bx bxl-javascript"></i></div>
-            <h4><a href="">web development</a></h4>
-            <p>web development with javascript, HTML and CSS using framework such as django, flask, angular and node.js</p>
+            <h4><a href="#">Web Development</a></h4>
+            <p>Modern web development using JavaScript, HTML, CSS with frameworks like Django, Flask, Angular, and Node.js.</p>
           </div>
         </div>
 
@@ -431,9 +512,9 @@ Adept at troubleshooting, system maintenance, and collaborating in team environm
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">websites</li>
-            <li data-filter=".filter-web">machine learning </li>
+            <li data-filter=".filter-app">Apps</li>
+            <li data-filter=".filter-card">Websites</li>
+            <li data-filter=".filter-web">Machine Learning</li>
           </ul>
         </div>
       </div>
@@ -442,13 +523,13 @@ Adept at troubleshooting, system maintenance, and collaborating in team environm
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="Python Game Project">
             <div class="portfolio-info">
-              <h4>Python project </h4>
-              <p>game</p>
+              <h4>Python Project</h4>
+              <p>Game</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/sebby-wekesa/projectsebby"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Python Game"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/sebby-wekesa/projectsebby" target="_blank"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -456,13 +537,13 @@ Adept at troubleshooting, system maintenance, and collaborating in team environm
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="Telescope Dataset Project">
             <div class="portfolio-info">
-              <h4>Telescope project</h4>
-              <p>telescope dataset</p>
+              <h4>Telescope Project</h4>
+              <p>Dataset Analysis</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/sebby-wekesa/telescope_project"> <i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Telescope Dataset"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/sebby-wekesa/telescope_project" target="_blank"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -470,27 +551,13 @@ Adept at troubleshooting, system maintenance, and collaborating in team environm
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="Rock Paper Scissors Game">
             <div class="portfolio-info">
-              <h4>Rock paper scissors</h4>
-              <p>game</p>
+              <h4>Rock Paper Scissors</h4>
+              <p>Game</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/sebby-wekesa/Myrock_paper_scissors"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Rock Paper Scissors Game"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/sebby-wekesa/Myrock_paper_scissors" target="_blank"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -498,27 +565,28 @@ Adept at troubleshooting, system maintenance, and collaborating in team environm
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="Seed Dataset Project">
             <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
+              <h4>Seed Project</h4>
+              <p>Machine Learning</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Seed Dataset ML Project"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/sebby-wekesa/seedDataset_" target="_blank"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <!-- Placeholder for future projects -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="Web Development Project">
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
+              <h4>Website Project</h4>
+              <p>Web Development</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Website Project"><i class="bx bx-plus"></i></a>
+                <a href="#" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -526,41 +594,13 @@ Adept at troubleshooting, system maintenance, and collaborating in team environm
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="Web Application">
             <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
+              <h4>Web Application</h4>
+              <p>Development</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>seed project</h4>
-              <p>Machine learning</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/sebby-wekesa/seedDataset_"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web Application"><i class="bx bx-plus"></i></a>
+                <a href="#" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -595,10 +635,10 @@ Adept at troubleshooting, system maintenance, and collaborating in team environm
             <i class="bx bx-share-alt"></i>
             <h3>Social Profiles</h3>
             <div class="social-links">
-              <a href="https://twitter.com/Sebby_wekesa" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="https://github.com/sebby-wekesa" class="github"><i class="bi bi-github"></i></a>
-              <a href="https://www.instagram.com/iam_s.e.b.b.y/#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/sebby-wekesa-1532781a0" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://twitter.com/Sebby_wekesa" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://github.com/sebby-wekesa" target="_blank" class="github"><i class="bi bi-github"></i></a>
+              <a href="https://www.instagram.com/iam_s.e.b.b.y/#" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/sebby-wekesa-1532781a0" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -614,7 +654,7 @@ Adept at troubleshooting, system maintenance, and collaborating in team environm
           <div class="info-box">
             <i class="bx bx-phone-call"></i>
             <h3>Call Me</h3>
-            <p>+254 79729 4574</p>
+            <p>+254 797 294 574</p>
           </div>
         </div>
       </div>
@@ -639,14 +679,14 @@ Adept at troubleshooting, system maintenance, and collaborating in team environm
           <div class="error-message"></div>
           <div class="sent-message">Your message has been sent. Thank you!</div>
         </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
+        <div class="text-center"><button type="submit" class="btn btn-custom">Send Message</button></div>
       </form>
 
     </div>
   </section><!-- End Contact Section -->
 
   <div class="credits">
-    Designed by @sebby wekesa
+    Designed by <a href="#">Sebby Wekesa</a>
   </div>
 
   <!-- Vendor JS Files -->
@@ -660,6 +700,21 @@ Adept at troubleshooting, system maintenance, and collaborating in team environm
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  <!-- Typed.js for animated text -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    // Initialize Typed.js
+    document.addEventListener('DOMContentLoaded', function() {
+      var typed = new Typed('.typed', {
+        strings: ['Python Developer', 'Data Scientist', 'Software Engineer', 'Problem Solver'],
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 2000,
+        loop: true
+      });
+    });
+  </script>
 
 </body>
 
