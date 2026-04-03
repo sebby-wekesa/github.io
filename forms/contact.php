@@ -13,17 +13,11 @@ error_reporting(E_ALL);
 ini_set('display_errors', 0); // Don't display errors to users
 
 // Set headers for AJAX response
-header('Content-Type: application/json; charset=utf-8');
+header('Content-Type: text/plain; charset=utf-8');
 
 // Configuration
 $receiving_email_address = 'sebbywakis@gmail.com';
 $php_email_form_path = '../assets/vendor/php-email-form/php-email-form.php';
-
-// Response variables
-$response = [
-    'success' => false,
-    'message' => ''
-];
 
 try {
     // Check request method
@@ -130,9 +124,8 @@ try {
 
     // Send the email
     if ($contact->send()) {
-        $response['success'] = true;
-        $response['message'] = 'Thank you! Your message has been sent successfully. I will get back to you as soon as possible.';
         http_response_code(200);
+        echo 'OK';
     } else {
         // If send() returned false, get the error details
         $errors = $contact->get_errors();
@@ -142,21 +135,15 @@ try {
 
 } catch (InvalidArgumentException $e) {
     // Handle validation errors from the email form class
-    $response['success'] = false;
-    $response['message'] = 'Validation Error: ' . $e->getMessage();
     http_response_code(400);
+    echo 'Validation Error: ' . $e->getMessage();
 } catch (RuntimeException $e) {
     // Handle sending errors
-    $response['success'] = false;
-    $response['message'] = 'Error sending email: ' . $e->getMessage();
     http_response_code(500);
+    echo 'Error sending email: ' . $e->getMessage();
 } catch (Exception $e) {
     // Handle any other errors
-    $response['success'] = false;
-    $response['message'] = $e->getMessage();
     http_response_code(400);
+    echo $e->getMessage();
 }
-
-// Return JSON response
-echo json_encode($response);
 ?>

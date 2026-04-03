@@ -43,7 +43,7 @@ class PHP_Email_Form {
     private bool $enable_logging = false;
     
     // CSRF Protection
-    private bool $csrf_protection_enabled = true;
+    private bool $csrf_protection_enabled = false;
 
     
     /**
